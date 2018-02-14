@@ -11,8 +11,8 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#b9dd08",
-    "navigationBarTitleText": "ofo 共享单车",
+    "navigationBarBackgroundColor":"#b9dd08",
+    "navigationBarTitleText": "车位帮",
     "navigationBarTextStyle":"black"
   }
 }

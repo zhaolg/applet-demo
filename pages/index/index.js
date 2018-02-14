@@ -38,17 +38,18 @@ Page({
             },
             clickable: true
           },
-          {
-            id: 2,
-            iconPath: '/images/use.png',
-            position: {
-              left: res.windowWidth/2 - 45,
-              top: res.windowHeight - 100,
-              width: 90,
-              height: 90
-            },
-            clickable: true
-          },
+          //当前注释为 立即用车图片
+          // {
+          //   id: 2,
+          //   iconPath: '/images/use.png',
+          //   position: {
+          //     left: res.windowWidth/2 - 45,
+          //     top: res.windowHeight - 100,
+          //     width: 90,
+          //     height: 90
+          //   },
+          //   clickable: true
+          // },
           {
             id: 3,
             iconPath: '/images/warn.png',
@@ -88,7 +89,7 @@ Page({
 
     // 4.请求服务器，显示附近的单车，用marker标记
     wx.request({
-      url: 'https://www.easy-mock.com/mock/59098d007a878d73716e966f/ofodata/biyclePosition',
+      url: 'https://zhaolg5.vicp.io/biyclePosition',
       data: {},
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
@@ -130,7 +131,7 @@ Page({
               })
               // 请求服务器获取密码和车号
               wx.request({
-                url: 'https://www.easy-mock.com/mock/59098d007a878d73716e966f/ofodata/password',
+                url: 'https://zhaolg5.vicp.io/password',
                 data: {},
                 method: 'GET', 
                 success: function(res){
@@ -175,7 +176,7 @@ Page({
     // 拖动地图，获取附件单车位置
     if(e.type == "begin"){
       wx.request({
-        url: 'https://www.easy-mock.com/mock/59098d007a878d73716e966f/ofodata/biyclePosition',
+        url: 'https://zhaolg5.vicp.io/getPath',
         data: {},
         method: 'GET', 
         success: (res) => {

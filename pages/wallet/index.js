@@ -52,7 +52,7 @@ Page({
   showTicket: function(){
     wx.showModal({
       title: "",
-      content: "你没有用车券了",
+      content: "你没有车位券了",
       showCancel: false,
       confirmText: "好吧",
     })
@@ -61,7 +61,7 @@ Page({
   showDeposit: function(){
     wx.showModal({
       title: "",
-      content: "押金会立即退回，退款后，您将不能使用ofo共享单车确认要进行此退款吗？",
+      content: "押金会立即退回，退款后，您将不能使用车位帮确认要进行此退款吗？",
       cancelText: "继续使用",
       cancelColor: "#b9dd08",
       confirmText: "押金退款",
@@ -80,10 +80,10 @@ Page({
 // 关于ofo
   showInvcode: function(){
     wx.showModal({
-      title: "ofo共享单车",
-      content: "微信服务号：ofobike,网址：m.ofo.so",
+      title: "车位帮",
+      content: "微信服务号：zhaolingang1314 ,网址：zhaolg5.vicp.io",
       showCancel: false,
-      confirmText: "玩的6"
+      confirmText: "点赞啦！"
     })
   }
 })

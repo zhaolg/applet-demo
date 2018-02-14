@@ -13,7 +13,7 @@
     </view>
 
     <view class="endride">
-        <button type="warn" disabled="{{disabled}}" bindtap="endRide">结束骑行</button>
+        <button type="warn" disabled="{{disabled}}" bindtap="endRide">结束计费</button>
         <button type="primary" bindtap="moveToIndex">回到地图</button>
     </view>
 </view>

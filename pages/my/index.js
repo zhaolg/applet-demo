@@ -79,7 +79,7 @@ Page({
     }else{
       wx.showModal({
         title: "确认退出?",
-        content: "退出后将不能使用ofo",
+        content: "退出后将不能使用车位帮",
         success: (res) => {
           if(res.confirm){
             console.log("确定")

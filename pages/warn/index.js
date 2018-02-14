@@ -19,37 +19,17 @@ Page({
     itemsValue: [
       {
         checked: false,
-        value: "私锁私用",
+        value: "车锁损坏",
         color: "#b9dd08"
       },
       {
         checked: false,
-        value: "车牌缺损",
-        color: "#b9dd08"
-      },
-      {
-        checked: false,
-        value: "轮胎坏了",
-        color: "#b9dd08"
-      },
-      {
-        checked: false,
-        value: "车锁坏了",
-        color: "#b9dd08"
-      },
-      {
-        checked: false,
-        value: "违规乱停",
+        value: "车位有车",
         color: "#b9dd08"
       },
       {
         checked: false,
         value: "密码不对",
-        color: "#b9dd08"
-      },
-      {
-        checked: false,
-        value: "刹车坏了",
         color: "#b9dd08"
       },
       {
@@ -62,7 +42,7 @@ Page({
 // 页面加载
   onLoad:function(options){
     wx.setNavigationBarTitle({
-      title: '报障维修'
+      title: '车位报障'
     })
   },
 // 勾选故障类型，获取类型值存入checkboxValue
@@ -101,7 +81,7 @@ Page({
   formSubmit: function(e){
     if(this.data.picUrls.length > 0 && this.data.checkboxValue.length> 0){
       wx.request({
-        url: 'https://www.easy-mock.com/mock/59098d007a878d73716e966f/ofodata/msg',
+        url: 'https://zhaolg5.vicp.io/msg',
         data: {
           // picUrls: this.data.picUrls,
           // inputValue: this.data.inputValue,
@@ -120,9 +100,9 @@ Page({
     }else{
       wx.showModal({
         title: "请填写反馈信息",
-        content: '看什么看，赶快填反馈信息，削你啊',
-        confirmText: "我我我填",
-        cancelText: "劳资不填",
+        content: '填写反馈信息',
+        confirmText: "确认填写",
+        cancelText: "下次呗",
         success: (res) => {
           if(res.confirm){
             // 继续填

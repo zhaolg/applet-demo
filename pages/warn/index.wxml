@@ -11,7 +11,7 @@
         </checkbox-group>        
     </view>
     <view class="action">
-        <view class="title">拍摄单车周围环境，便于维修师傅找车</view>
+        <view class="title">拍摄车位周围环境，便于维修师傅找车位</view>
         <view class="action-photo">
         <block wx:for="{{picUrls}}" wx:key="{{item}}" wx:index="{{index}}">
             <image src="{{item}}"><icon type="cancel" data-index="{{index}}" color="red" size="18" class ="del" bindtap="delPic" /></image>
@@ -19,7 +19,7 @@
             <text class="add" bindtap="bindCamera">{{actionText}}</text>
         </view>
         <view class="action-input">
-            <input bindinput="numberChange" name="number" placeholder="车牌号（车牌损坏不用填）" />
+            <input bindinput="numberChange" name="number" placeholder="车位号（车位锁损坏不用填）" />
             <input bindinput="descChange" name="desc" placeholder="备注" />            
         </view>
         <view class="action-submit">
