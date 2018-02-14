@@ -39,17 +39,17 @@ Page({
             clickable: true
           },
           //当前注释为 立即用车图片
-          // {
-          //   id: 2,
-          //   iconPath: '/images/use.png',
-          //   position: {
-          //     left: res.windowWidth/2 - 45,
-          //     top: res.windowHeight - 100,
-          //     width: 90,
-          //     height: 90
-          //   },
-          //   clickable: true
-          // },
+          {
+            id: 2,
+            iconPath: '/images/use.png',
+            position: {
+              left: res.windowWidth/2 - 45,
+              top: res.windowHeight - 100,
+              width: 100,
+              height: 100
+            },
+            clickable: true
+          },
           {
             id: 3,
             iconPath: '/images/warn.png',
