@@ -81,7 +81,7 @@ Page({
   showInvcode: function(){
     wx.showModal({
       title: "车位帮",
-      content: "微信服务号：zhaolingang1314 ,网址：zhaolg5.vicp.io",
+      content: "微信服务号： zhaolingang1314  网址：www.zhaolg5.com",
       showCancel: false,
       confirmText: "点赞啦！"
     })
